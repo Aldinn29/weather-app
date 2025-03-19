@@ -43,7 +43,7 @@ function App() {
       <h1 className='mb-4'>Weather app</h1>
       <input type='text' placeholder='Enter city name' className='form-control rounded-5 text-center fs-4' onChange={handleCity} />
       {error && <h4 className="text-danger my-3">{error}</h4>}
-      <button className='btn btn-warning rounded-5 fs-5 fw-bold w-25 mx-auto my-4' onClick={() => getWeather(city)}>Get weather</button>
+      <button className='btn btn-warning rounded-5 fs-5 fw-bold mx-auto my-4 px-4' onClick={() => getWeather(city)}>Get weather</button>
       {data && <Weather data={data} />}
     </div>
   )
